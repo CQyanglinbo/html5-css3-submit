@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单页面</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #6fb3e0;
+	}
+	form{
+		background-color: #f9f9f9;
+		height: 600px;
+		width: 400px;
+		margin:auto;
+	}
+	fieldset{
+		border:0px;
+	}
+	legend{
+		color: #F96;
+		line-height: 50px;
+		margin-bottom: -20px;
+		font-size: 30px;
+		padding-top: 20px;
+		margin-left: 7px;
+
+	}
+	input{
+		width: 350px;
+		height: 40px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		background-color: #ffffff;
+		border-color: #cccccc;
+		outline: none;
+		border-width: 1.2px;
+		border-style: solid;
+		transition:border-color 2s;
+	}
+	#words{
+		margin-top: -5px;
+		color: #777777;
+		margin-left: 10px;
+	}
+	textarea{
+		width: 346px;
+		height:100px;
+		margin-bottom: 30px;
+		margin-left: 10px;
+		outline: none;
+		transition:border-color 0.3s;
+
+	}
+	.input:hover{
+		border-color:#aaa;
+	}
+	.input:focus{
+		border-color:#999;
+	}
+	#button{
+		background-color:#6FB3E0;
+		color: white;
+		transition:background-color 0.3s;
+	}
+	#button:hover{
+		background-color:#aaa;
+	}
+	#button:active{
+		box-shadow:0px 1px 3px black inset;
+		opacity:0.5;
+	}
+
+</style>
+<body>
+	<form>
+		<fieldset>
+			<legend>Quick Contact</legend><br>
+			<p id="words">Contact us today,and get reply with in 24 hours!</p>
+			<input type="text" class="input" placeholder="Your name" required="required"><br>
+			<input type="email" class="input" placeholder="Your Email Address" required="required"><br>
+			<input type="tel" class="input" placeholder="Your Phone Number" required="required"><br>
+			<input type="url" class="input" placeholder="Your Web Site starts with http://" required="required"><br>
+			<textarea class="input" placeholder="Type your Message Here..." required="required"></textarea><br>
+			<input type="submit" id="button" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>
